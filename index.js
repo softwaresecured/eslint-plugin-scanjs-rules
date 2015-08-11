@@ -89,92 +89,93 @@ module.exports = {
     'JavaScript Input-property_mozNotification': require('./lib/rules/property_mozNotification')
   },
   rulesConfig: {
-    'call_eval': 2,
-    'new_Function': 2,
-    'call_Function': 2,
-    'call_setTimeout': 2,
-    'call_setInterval': 2,
-    'call_setImmediate': 2,
-    'call_execScript': 2,
-    'call_generateCRMFRequest': 2,
-    'call_write': 2,
-    'call_writeln': 2,
-    'property_createContextualFragment': 2,
-    'assign_to_location': 2,
-    'assign_to_href': 2,
-    'assign_to_pathname': 2,
-    'assign_to_search': 2,
-    'assign_to_protocol': 2,
-    'assign_to_hostname': 2,
-    'assign_to_src': 2,
-    'call_parseFromString': 2,
-    'call_addEventListener': 2,
-    'call_addEventListener_message': 2,
-    'assign_to_onmessage': 2,
-    'identifier_indexedDB': 2,
-    'identifier_localStorage': 2,
-    'identifier_sessionStorage': 2,
-    'property_indexedDB': 2,
-    'property_localStorage': 2,
-    'property_sessionStorage': 2,
-    'new_MozActivity': 2,
-    'call_mozSetMessageHandler_activity': 2,
-    'call_mozSetMessageHandler': 2,
-    'property_getDataStores': 2,
-    'call_connect': 2,
-    'call_setMessageHandler_connect': 2,
-    'property_mozAlarms': 2,
-    'call_open_attention': 2,
-    'property_getUserMedia': 2,
-    'assign_to_mozAudioChannelType': 2,
-    'assign_to_mozAudioChannel': 2,
-    'call_addEventListener_deviceproximity': 2,
-    'property_mozBluetooth': 2,
-    'call_setAttribute_mozbrowser': 2,
-    'call_addEventListener_cellbroadcastmsgchanged': 2,
-    'property_mozCameras': 2,
-    'property_mozContacts': 2,
-    'new_Notification': 2,
-    'property_getDeviceStorage': 2,
-    'call_getDeviceStorage_apps': 2,
-    'call_getDeviceStorage_crashes': 2,
-    'call_getDeviceStorage_music': 2,
-    'call_getDeviceStorage_pictures': 2,
-    'call_getDeviceStorage_sdcard': 2,
-    'call_getDeviceStorage_videos': 2,
-    'property_mozDownloadManager': 2,
-    'call_setAttribute_mozapp': 2,
-    'property_mozFMRadio': 2,
-    'property_geolocation': 2,
-    'property_addIdleObserver': 2,
-    'property_mozInputMethod': 2,
-    'call_hide': 2,
-    'property_mozMobileConnections': 2,
-    'property_lastKnownHomeNetwork': 2,
-    'property_lastKnownNetwork': 2,
-    'call_addEventListener_moznetworkupload': 2,
-    'call_addEventListener_moznetworkdownload': 2,
-    'property_mozNetworkStats': 2,
-    'property_mozNfc': 2,
-    'call_open_remote=true': 2,
-    'property_mozPermissionSettings': 2,
-    'property_mozPhoneNumberService': 2,
-    'property_mozPower': 2,
-    'property_mozSettings': 2,
-    'property_mozMobileMessage': 2,
-    'new_MozSpeakerManager': 2,
-    'object_mozSystem': 2,
-    'property_mozTCPSocket': 2,
-    'property_mozTelephony': 2,
-    'property_mozTime': 2,
-    'property_mozVoicemail': 2,
-    'call_mozSetMessageHandler_wappush_received': 2,
-    'property_mgmt': 2,
-    'property_mozWifiManager': 2,
-    'property_mozKeyboard': 2,
-    'property_mozCellBroadcast': 2,
-    'property_mozMobileConnection': 2,
-    'property_mozNotification': 2
+    'Directly Executing Scripts-call_eval': 2
+    'Directly Executing Scripts-new_Function': 2
+    'Directly Executing Scripts-call_Function': 2
+    'Directly Executing Scripts-call_setTimeout': 2
+    'Directly Executing Scripts-call_setInterval': 2
+    'Directly Executing Scripts-call_setImmediate': 2
+    'Directly Executing Scripts-call_execScript': 2
+    'Directly Executing Scripts-call_generateCRMFRequest': 2
+    'JavaScript Output-call_write': 2
+    'JavaScript Output-call_writeln': 2
+    'Modifying the DOM-property_createContextualFragment': 2
+    'JavaScript Input-assign_to_location': 2
+    'Opening or Modifying a Window-assign_to_href': 2
+    'Opening or Modifying a Window-assign_to_pathname': 2
+    'Opening or Modifying a Window-assign_to_search': 2
+    'Opening or Modifying a Window-assign_to_protocol': 2
+    'Opening or Modifying a Window-assign_to_hostname': 2
+    'Opening or Modifying a Window-assign_to_src': 2
+    'JavaScript Output-call_parseFromString': 2
+    'JavaScript Input-call_addEventListener': 2
+    'JavaScript Input-call_addEventListener_message': 2
+    'Cross Window-assign_to_onmessage': 2
+    'Insecure Data Storage-identifier_indexedDB': 2
+    'Insecure Data Storage-identifier_localStorage': 2
+    'Insecure Data Storage-identifier_sessionStorage': 2
+    'Insecure Data Storage-property_indexedDB': 2
+    'Insecure Data Storage-property_localStorage': 2
+    'Insecure Data Storage-property_sessionStorage': 2
+    'JavaScript Input-new_MozActivity': 2
+    'Directly Executing Scripts-call_mozSetMessageHandler_activity': 2
+    'Directly Executing Scripts-call_mozSetMessageHandler': 2
+    'Insecure Data Storage-property_getDataStores': 2
+    'JavaScript Input-call_connect': 2
+    'Directly Executing Scripts-call_setMessageHandler_connect': 2
+    'JavaScript Input-property_mozAlarms': 2
+    'JavaScript Input-call_open_attention': 2
+    'JavaScript Input-property_getUserMedia': 2
+    'Opening or Modifying a Window-assign_to_mozAudioChannelType': 2
+    'Opening or Modifying a Window-assign_to_mozAudioChannel': 2
+    'JavaScript Input-call_addEventListener_deviceproximity': 2
+    'JavaScript Input-property_mozBluetooth': 2
+    'Modifying the DOM-call_setAttribute_mozbrowser': 2
+    'JavaScript Input-property_mozCameras': 2
+    'Cross Browsing-call_addEventListener_cellbroadcastmsgchanged': 2
+    'JavaScript Input-property_mozContacts': 2
+    'JavaScript Input-new_Notification': 2
+    'Insecure Data Storage-property_getDeviceStorage': 2
+    'Insecure Data Storage-call_getDeviceStorage_apps': 2
+    'Insecure Data Storage-call_getDeviceStorage_crashes': 2
+    'Insecure Data Storage-call_getDeviceStorage_music': 2
+    'Insecure Data Storage-call_getDeviceStorage_pictures': 2
+    'Insecure Data Storage-call_getDeviceStorage_sdcard': 2
+    'Insecure Data Storage-call_getDeviceStorage_videos': 2
+    'JavaScript Input-property_mozDownloadManager': 2
+    'Directly Executing Scripts-call_setAttribute_mozapp': 2
+    'JavaScript Input-property_mozFMRadio': 2
+    'JavaScript Input-property_geolocation': 2
+    'JavaScript Input-property_addIdleObserver': 2
+    'Javascript Input-property_mozInputMethod': 2
+    'Modifying the DOM-call_hide': 2
+    'JavaScript Input-property_mozMobileConnections': 2
+    'JavaScript Input-property_lastKnownHomeNetwork': 2
+    'JavaScript Input-property_lastKnownNetwork': 2
+    'JavaScript Input-call_addEventListener_moznetworkupload': 2
+    'JavaScript Input-call_addEventListener_moznetworkdownload': 2
+    'JavaScript Input-property_mozNetworkStats': 2
+    'JavaScript Input-property_mozNfc': 2
+    'JavaScript Input-call_open_remote=true': 2
+    'JavaScript Input-property_mozPermissionSettings': 2
+    'JavaScript Input-property_mozPhoneNumberService': 2
+    'JavaScript Input-property_mozPower': 2
+    'JavaScript Input-property_mozSettings': 2
+    'Cross Browsing-property_mozMobileMessage': 2
+    'JavaScript Input-new_MozSpeakerManager': 2
+    'JavaScript Input-object_mozSystem': 2
+    'JavaScript Input-property_mozTCPSocket': 2
+    'JavaScript Input-property_mozTelephony': 2
+    'JavaScript Input-property_mozTime': 2
+    'JavaScript Input-property_mozVoicemail': 2
+    'JavaScript Input-call_mozSetMessageHandler_wappush_received': 2
+    'Vunlerabiltiy Management-property_mgmt': 2
+    'JavaScript Input-property_mozWifiManager': 2
+    'JavaScript Input-property_mozKeyboard': 2
+    'JavaScript Input-property_mozCellBroadcast': 2
+    'JavaScript Input-property_mozMobileConnection': 2
+    'JavaScript Input-property_mozNotification': 2
+
   }
 }
 
